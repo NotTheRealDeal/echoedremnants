@@ -1,5 +1,7 @@
 package net.ntrdeal.echoedremnants.client;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.Camera;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -11,6 +13,7 @@ import net.minecraft.world.level.material.FogType;
 import net.ntrdeal.echoedremnants.component.echoed.EchoedComponent;
 import org.jspecify.annotations.Nullable;
 
+@Environment(EnvType.CLIENT)
 public class EchoedFogEnvironment extends FogEnvironment {
     @Override
     public void setupFog(FogData fog, Camera camera, ClientLevel level, float renderDistance, DeltaTracker deltaTracker) {

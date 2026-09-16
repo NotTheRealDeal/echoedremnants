@@ -37,6 +37,6 @@ public class EchoedRemnantsDataGenerator implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistrySetBuilder builder) {
-		builder.add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::register);
+		builder.add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::bootstrap);
 	}
 }

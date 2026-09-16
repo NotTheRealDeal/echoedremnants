@@ -8,7 +8,7 @@ import net.ntrdeal.echoedremnants.component.echoed.EchoedComponent;
 import net.ntrdeal.echoedremnants.component.echolocation.EcholocationComponent;
 import net.ntrdeal.echoedremnants.component.protection.ProtectionComponent;
 import net.ntrdeal.echoedremnants.item.component.ModDataComponents;
-import net.ntrdeal.realapi.cardinal_components.CardinalUtil;
+import net.ntrdeal.realapi.compat.cardinal.CardinalUtil;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
 import org.ladysnake.cca.api.v3.component.ComponentRegistry;
 import org.ladysnake.cca.api.v3.entity.EntityComponentFactoryRegistry;

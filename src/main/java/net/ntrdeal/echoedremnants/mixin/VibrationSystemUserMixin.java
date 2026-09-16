@@ -7,7 +7,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.gameevent.vibrations.VibrationSystem;
 import net.ntrdeal.echoedremnants.component.ModComponents;
 import net.ntrdeal.echoedremnants.component.echolocation.EcholocationUser;
-import net.ntrdeal.realapi.cardinal_components.CardinalUtil;
+import net.ntrdeal.realapi.compat.cardinal.CardinalUtil;
 import net.ntrdeal.realapi.data.mixin.RealMixin;
 import org.spongepowered.asm.mixin.Mixin;
 

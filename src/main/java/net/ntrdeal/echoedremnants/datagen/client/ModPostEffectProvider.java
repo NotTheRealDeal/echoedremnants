@@ -34,7 +34,6 @@ public class ModPostEffectProvider extends FabricCodecDataProvider<PostChainConf
     private static final Identifier QUAD_CORE = Identifier.withDefaultNamespace("core/screenquad");
     private static final Identifier BLUR_POST = Identifier.withDefaultNamespace("post/box_blur");
     private static final Identifier COLOR_POST = Identifier.withDefaultNamespace("post/color_convolve");
-    private static final Identifier BLIT_POST = Identifier.withDefaultNamespace("post/blit");
 
     public ModPostEffectProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> lookup) {
         super(output, lookup, PackOutput.Target.RESOURCE_PACK, "post_effect", PostChainConfig.CODEC);

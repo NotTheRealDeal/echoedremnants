@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "echoedremnants:rose_gold_monocle"
+        "recipes": "echoedremnants:rose_gold_monocle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

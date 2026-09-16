@@ -7,7 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.ntrdeal.echoedremnants.component.ModComponents;
 import net.ntrdeal.echoedremnants.component.echolocation.Echolocation;
-import net.ntrdeal.realapi.cardinal_components.EntityComponent;
+import net.ntrdeal.realapi.compat.cardinal.EntityComponent;
 import org.jspecify.annotations.Nullable;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
 import org.ladysnake.cca.api.v3.component.TransientComponent;

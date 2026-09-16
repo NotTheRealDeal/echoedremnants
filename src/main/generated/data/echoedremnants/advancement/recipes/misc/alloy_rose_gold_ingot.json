@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "echoedremnants:alloy_rose_gold_ingot"
+        "recipes": "echoedremnants:alloy_rose_gold_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

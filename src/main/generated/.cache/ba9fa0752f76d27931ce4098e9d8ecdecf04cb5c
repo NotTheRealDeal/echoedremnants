@@ -1,4 +1,4 @@
-// 26.2	-999999999-01-01T00:00:00	Echoed Remnants/Tags for minecraft:block
+// 26.3-pre-2	-999999999-01-01T00:00:00	Echoed Remnants/Tags for minecraft:block
 2fbc5be00254e534ab5ad48eb85ee71602bde11e data/echoedremnants/tags/block/cannot_echo.json
 b3bbdc8642a575dee7b7b5ce618afb766531e7f7 data/minecraft/tags/block/mineable/pickaxe.json
 b3bbdc8642a575dee7b7b5ce618afb766531e7f7 data/minecraft/tags/block/needs_iron_tool.json

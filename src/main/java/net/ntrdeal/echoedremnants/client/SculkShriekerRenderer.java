@@ -3,6 +3,8 @@ package net.ntrdeal.echoedremnants.client;
 import com.google.common.base.Suppliers;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -22,6 +24,7 @@ import org.jspecify.annotations.Nullable;
 
 import java.util.function.Supplier;
 
+@Environment(EnvType.CLIENT)
 public class SculkShriekerRenderer implements BlockEntityRenderer<SculkShriekerBlockEntity, SculkShriekerRenderer.RenderState> {
     private static final float SCALE = 1.25f;
     private static final float MULTI_SCALE = 1f / SCALE;
@@ -62,10 +65,10 @@ public class SculkShriekerRenderer implements BlockEntityRenderer<SculkShriekerB
 
         for (int index = 0; index < shards; index++) {
             poseStack.translate(scaled(0.5f), 0f, scaled(0.5f));
-            poseStack.mulPose(Axis.YP.rotationDegrees(90f));
+            poseStack.rotate(Axis.YP.rotationDegrees(90f));
             poseStack.pushPose();
             poseStack.translate(scaled(-0.05f), 0f, 0f);
-            poseStack.mulPose(Axis.ZN.rotationDegrees(45f));
+            poseStack.rotate(Axis.ZN.rotationDegrees(45f));
             state.stackState.submit(poseStack, collector, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
             poseStack.popPose();
         }

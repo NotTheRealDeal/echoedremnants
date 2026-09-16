@@ -3,7 +3,7 @@ package net.ntrdeal.echoedremnants.mixin;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.gameevent.DynamicGameEventListener;
 import net.ntrdeal.echoedremnants.component.ModComponents;
-import net.ntrdeal.realapi.cardinal_components.CardinalUtil;
+import net.ntrdeal.realapi.compat.cardinal.CardinalUtil;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

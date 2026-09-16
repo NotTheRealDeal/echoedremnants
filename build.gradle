@@ -34,10 +34,11 @@ dependencies {
 	includeImplementation "org.ladysnake.cardinal-components-api:cardinal-components-entity:${project.cca_version}"
 
 	//runtime mods
-	runtimeOnly "maven.modrinth:modmenu:${project.modmenu_version}"
-	runtimeOnly "maven.modrinth:carpet:${project.carpet_version}"
-	runtimeOnly "maven.modrinth:sodium:${project.sodium_version}"
-	runtimeOnly "maven.modrinth:jei:${project.jei_version}"
+	runtimeOnly "maven.modrinth:mOgUt4GM:${project.modmenu_version}"
+//	runtimeOnly "maven.modrinth:TQTTVgYE:${project.carpet_version}"
+//	runtimeOnly "maven.modrinth:l6YH9Als:${project.spark_version}"
+	runtimeOnly "maven.modrinth:AANobbMI:${project.sodium_version}"
+//	runtimeOnly "maven.modrinth:u6dRKJwZ:${project.jei_version}"
 }
 
 processResources {

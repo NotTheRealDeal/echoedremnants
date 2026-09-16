@@ -9,7 +9,9 @@
 		"Artist: Evan2Awesome"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/project/echoedremnants"
+		"homepage": "https://modrinth.com/project/echoedremnants",
+		"sources": "https://github.com/NotTheRealDeal/echoed-remnants",
+		"issues": "https://github.com/NotTheRealDeal/echoed-remnants/issues"
 	},
 	"license": "MIT",
 	"icon": "icon.png",
@@ -40,9 +42,10 @@
 	],
 	"accessWidener": "echoedremnants.classtweaker",
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
 		"java": ">=25",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"realapi": ">=0.4.94"
 	}
 }

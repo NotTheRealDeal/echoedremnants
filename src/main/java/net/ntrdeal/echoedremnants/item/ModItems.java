@@ -12,27 +12,26 @@ import net.ntrdeal.echoedremnants.item.component.ModDataComponents;
 import net.ntrdeal.echoedremnants.item.equipment.ModArmorMaterials;
 import net.ntrdeal.echoedremnants.reference.ModBlockItemIds;
 import net.ntrdeal.echoedremnants.reference.ModItemIds;
-import net.ntrdeal.realapi.util.RegistryUtil;
 
 public class ModItems {
-    public static final Item ROSE_GOLD_NUGGET = RegistryUtil.ItemUtil.registerItem(ModItemIds.ROSE_GOLD_NUGGET);
-    public static final Item ROSE_GOLD_INGOT = RegistryUtil.ItemUtil.registerItem(ModItemIds.ROSE_GOLD_INGOT);
+    public static final Item ROSE_GOLD_NUGGET = Items.registerItem(ModItemIds.ROSE_GOLD_NUGGET);
+    public static final Item ROSE_GOLD_INGOT = Items.registerItem(ModItemIds.ROSE_GOLD_INGOT);
 
-    public static final Item ROSE_GOLD_PENDANT = RegistryUtil.ItemUtil.registerItem(
+    public static final Item ROSE_GOLD_PENDANT = Items.registerItem(
             ModItemIds.ROSE_GOLD_PENDANT, properties -> new Item(properties
                     .humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.CHESTPLATE)
                     .component(ModDataComponents.ECHO_PROTECTION, EchoProtection.EMPTY)
             )
     );
 
-    public static final Item ROSE_GOLD_MONOCLE = RegistryUtil.ItemUtil.registerItem(
+    public static final Item ROSE_GOLD_MONOCLE = Items.registerItem(
             ModItemIds.ROSE_GOLD_MONOCLE, properties -> new Item(properties
                     .humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.HELMET)
                     .component(ModDataComponents.ECHOLOCATION, Echolocation.EMPTY)
             )
     );
 
-    public static final Item ROSE_GOLD_BLOCK = RegistryUtil.ItemUtil.registerBlock(ModBlockItemIds.ROSE_GOLD_BLOCK, ModBlocks.ROSE_GOLD_BLOCK);
+    public static final Item ROSE_GOLD_BLOCK = Items.registerBlock(ModBlockItemIds.ROSE_GOLD_BLOCK, ModBlocks.ROSE_GOLD_BLOCK);
 
     public static void register() {
         ModDataComponents.register();

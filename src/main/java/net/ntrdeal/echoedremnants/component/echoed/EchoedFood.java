@@ -34,7 +34,7 @@ import net.ntrdeal.echoedremnants.block.ShriekerTriggerer;
 import net.ntrdeal.echoedremnants.component.ModComponents;
 import net.ntrdeal.echoedremnants.component.protection.ProtectionComponent;
 import net.ntrdeal.echoedremnants.item.component.ModDataComponents;
-import net.ntrdeal.realapi.cardinal_components.CardinalUtil;
+import net.ntrdeal.realapi.compat.cardinal.CardinalUtil;
 
 import java.util.function.Consumer;
 

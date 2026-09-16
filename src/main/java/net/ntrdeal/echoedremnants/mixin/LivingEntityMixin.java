@@ -28,10 +28,10 @@ public abstract class LivingEntityMixin extends Entity implements RealMixin<Livi
         super(type, level);
     }
 
-//    @WrapMethod(method = "heal")
-//    private void ntrdeal$echoed(float heal, Operation<Void> original) {
-//        if (!EchoedComponent.isEchoed(this)) original.call(heal);
-//    }
+    @WrapMethod(method = "heal")
+    private void ntrdeal$echoed(float heal, Operation<Void> original) {
+        if (!EchoedComponent.isEchoed(this)) original.call(heal);
+    }
 
     @WrapOperation(method = "baseTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurtServer(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
     private boolean ntrdeal$echoed(LivingEntity entity, ServerLevel level, DamageSource source, float damage, Operation<Boolean> original) {

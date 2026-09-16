@@ -2,6 +2,7 @@ package net.ntrdeal.echoedremnants.component.echoed;
 
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -9,8 +10,9 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.ntrdeal.echoedremnants.component.ModComponents;
 import net.ntrdeal.echoedremnants.component.protection.ProtectionComponent;
-import net.ntrdeal.realapi.cardinal_components.CardinalUtil;
-import net.ntrdeal.realapi.cardinal_components.EntityComponent;
+import net.ntrdeal.realapi.compat.cardinal.CardinalUtil;
+import net.ntrdeal.realapi.compat.cardinal.EntityComponent;
+import net.ntrdeal.realapi.entity.event.RealLivingEntityEvents;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
@@ -82,5 +84,9 @@ public class EchoedComponent implements EntityComponent<EchoedComponent>, Server
     public static void register() {
         EchoedEffect.register();
         EchoedFood.register();
+
+        RealLivingEntityEvents.INVULNERABLE_TO.register((entity, source) ->
+                source.is(DamageTypes.SONIC_BOOM) && CardinalUtil.returnOr(ModComponents.PROTECTION, entity, ProtectionComponent::protectsEffect, false)
+        );
     }
 }

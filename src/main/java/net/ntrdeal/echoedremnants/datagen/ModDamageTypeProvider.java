@@ -25,7 +25,7 @@ public class ModDamageTypeProvider extends FabricCodecDataProvider<DamageType> {
 
     @Override public String getName() {return "damage_types";}
 
-    public static void register(BootstrapContext<DamageType> context) {
+    public static void bootstrap(BootstrapContext<DamageType> context) {
         context.register(ModDamageTypeIds.ECHOED, new DamageType("echoed", DamageScaling.NEVER, 0f));
     }
 }

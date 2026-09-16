@@ -15,11 +15,10 @@
   "client": [
     "client.AvatarRendererMixin",
     "client.CameraMixin",
-    "client.FogRendererMixin",
     "client.HeartTypeMixin",
-    "client.MinecraftMixin",
+    "client.LevelExtractorMixin",
     "client.LivingEntityRendererMixin",
-    "client.ScreenEffectRendererMixin"
+    "client.MinecraftMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "echoedremnants:rose_gold_nugget"
+        "recipes": "echoedremnants:rose_gold_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
