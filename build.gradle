@@ -4,17 +4,15 @@ plugins {
 	id 'maven-publish'
 }
 
-version = project.mod_version
-group = project.maven_group
-
 repositories {
 	mavenLocal()
+	mavenCentral()
 	chenille.repositories.ladysnake()
 	chenille.repositories.modrinth()
 }
 
 loom {
-	accessWidenerPath = "src/main/resources/echoedremnants.classtweaker"
+	accessWidenerPath = file("src/main/resources/echoedremnants.classtweaker")
 }
 
 fabricApi {
@@ -35,10 +33,10 @@ dependencies {
 
 	//runtime mods
 	runtimeOnly "maven.modrinth:mOgUt4GM:${project.modmenu_version}"
-//	runtimeOnly "maven.modrinth:TQTTVgYE:${project.carpet_version}"
-//	runtimeOnly "maven.modrinth:l6YH9Als:${project.spark_version}"
+	runtimeOnly "maven.modrinth:TQTTVgYE:${project.carpet_version}"
+	runtimeOnly "maven.modrinth:l6YH9Als:${project.spark_version}"
 	runtimeOnly "maven.modrinth:AANobbMI:${project.sodium_version}"
-//	runtimeOnly "maven.modrinth:u6dRKJwZ:${project.jei_version}"
+	runtimeOnly "maven.modrinth:u6dRKJwZ:${project.jei_version}"
 }
 
 processResources {
